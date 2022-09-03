@@ -1,1 +1,1 @@
-# Some virtual Keyboards in one, organized in tabs (c#)
+# Some virtual Keyboards in one, organized by tabs (c#)
