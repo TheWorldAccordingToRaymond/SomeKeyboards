@@ -99,7 +99,7 @@ namespace SomeKeyboards
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(668, 28);
 			this.label2.TabIndex = 5;
-			this.label2.Text = "Characters to add (separated by a comma , a single character between 2 commas)";
+			this.label2.Text = "Characters to add (separated by a comma)";
 			// 
 			// PopupForm
 			// 
@@ -114,7 +114,7 @@ namespace SomeKeyboards
 			this.Controls.Add(this.button1);
 			this.Name = "PopupForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Modify personal tab";
+			this.Text = "Modify personal tab (experimental)";
 			this.TopMost = true;
 			this.ResumeLayout(false);
 			this.PerformLayout();

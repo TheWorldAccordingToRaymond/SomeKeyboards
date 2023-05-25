@@ -42,22 +42,19 @@ namespace SomeKeyboards
 				numeroElement++;
 				ongoingStr=element;
 				if(element.Length>1) {
-					//string c0 = Convert.ToInt32(element[0]).ToString("X");
-					//string c1 = Convert.ToInt32(element[1]).ToString("X");
-					//MessageBox.Show("Element [0]: " + c0 + " et [0]: "+ c1 +" length : " + element.Length);
 					if (Convert.ToInt32(element[0])<0x1000 && Convert.ToInt32(element[1])<0x1000){
-					  	isOk=false;
-						break;  	
+					  	//isOk=false;
+						//break;  	
 					}
 				}
 				if(element.Length>2 || element.Length<1){
-					isOk=false;
-					break;
+					//isOk=false;
+					//break;
 				}
 			}
 
 			if(! isOk){
-				MessageBox.Show("Characters must be separated by a comma, a single character between 2 commas. \n" + textBox2.Text + "\n Faulty element : \""+ ongoingStr +"\" at index: " + numeroElement , "Error" );
+				MessageBox.Show("Characters must be separated by a comma. \n" + textBox2.Text + "\n Faulty element : \""+ ongoingStr +"\" at index: " + numeroElement , "Error" );
 			}else{
 				try{
 			    	Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
